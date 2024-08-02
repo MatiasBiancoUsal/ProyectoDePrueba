@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    public float velocidad;
+    public Vector3 velocidad;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += velocidad * Vector3.right * Time.deltaTime;
+        transform.position += velocidad * Time.deltaTime;
     }
 }
